@@ -58,7 +58,7 @@ variable "update_config" {
   })
 }
 
-variable "version" {
+variable "cluster_version" {
   type        = string
   description = "(Optional) Kubernetes version. Defaults to EKS Cluster Kubernetes version. Terraform will only perform drift detection if a configuration value is provided."
   default     = null

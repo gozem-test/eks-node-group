@@ -4,7 +4,7 @@ resource "aws_eks_node_group" "node_group" {
   node_group_name = var.node_group_name
   node_role_arn   = var.node_role_arn
   subnet_ids      = var.subnet_ids
-  version         = var.version
+  version         = var.cluster_version
   ami_type        = var.ami_type
   capacity_type   = var.capacity_type
   disk_size       = var.disk_size
