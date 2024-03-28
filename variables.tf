@@ -66,7 +66,8 @@ variable "version" {
 
 variable "ami_type" {
   type        = string
-  description = "(Optional) Type of Amazon Machine Image (AMI) associated with the EKS Node Group."
+  description = "(Optional) Type of Amazon Machine Image (AMI) associated with the EKS Node Group. Valid values are: AL2_x86_64 | AL2_x86_64_GPU | AL2_ARM_64 | CUSTOM | BOTTLEROCKET_ARM_64 | BOTTLEROCKET_x86_64 | BOTTLEROCKET_ARM_64_NVIDIA | BOTTLEROCKET_x86_64_NVIDIA | WINDOWS_CORE_2019_x86_64 | WINDOWS_FULL_2019_x86_64 | WINDOWS_CORE_2022_x86_64 | WINDOWS_FULL_2022_x86_64 | AL2023_x86_64_STANDARD | AL2023_ARM_64_STANDARD"
+  default     = "AL2023_x86_64_STANDARD"
 }
 
 variable "capacity_type" {
